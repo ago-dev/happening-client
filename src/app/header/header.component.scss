@@ -1,4 +1,44 @@
+@import '../../styles/variables';
+
 header {
+  box-shadow: $global-shadow;
+  padding: 20px 0;
+
+  .container {
+    width: 78%;
+    margin: 0 auto;
+    overflow: hidden;
     display: flex;
     justify-content: space-between;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+
+    li:not(:last-child) {
+      margin-right: 20px;
+      font-size: 14px;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $primary-color;
+  }
+}
+
+.happening-logo {
+  display: flex;
+  align-items: center;
+  font-size: 27px;
+  font-weight: 900;
+}
+
+.logo-img {
+  width: 38px;
+}
+
+.logout-btn {
+  color: $primary-color;
 }
